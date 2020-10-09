@@ -3,7 +3,7 @@
 First We have to create a new folder, in our example i created the following folder.<br>
 Du_CAAS_Upload_Attendence
 
-> mkdir Du_CAAS_Upload_Attendence 
+> mkdir Du_CAAS_Upload_Attendence <br>
 > cd Du_CAAS_Upload_Attendence
 
 <br>
