@@ -14,7 +14,7 @@ Du_CAAS_Upload_Attendence
 ### Virtual Environment for the project
 ---
 create a new virtual environment in the folder with, then activate it
-> python3 -m evn caasEnv
+> python3 -m venv caasEnv
 
 <br>
 
