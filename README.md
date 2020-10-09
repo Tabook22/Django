@@ -16,6 +16,10 @@ Du_CAAS_Upload_Attendence
 create a new virtual environment in the folder with, then activate it
 > python3 -m venv caasEnv
 
+<pre>
+-m means module, and the name of the module to be opened is venv<br>
+the code "python -m venv caasEnv", means python open the module named venv and create a new virtual environment called caasEnv
+<pre>
 <br>
 
 > source caasEnv/bin/activate 
