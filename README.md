@@ -40,11 +40,11 @@ Create a new Django project "DUAtt", after that create a new Application. We are
 > django-admin startproject DUAtt
 <br>
 
-create the appliaiton, you have to enter into the folder DUAtt, which newlly created, then from inside that folder you have to issue the following command:
+To create the new application, you have to open the folder DUAtt, which newly created, then from inside that folder you have to issue the following command:
 
 > python manage.py startapp addatt
 
-This will add a primary app, but we must create other applicaitons, the django project is a list of connected applicaitons. But keep in maind the primary app is the main app from which we can call other applicaitons.
+This will add a primary app, but we must create other application, the django project is a list of connected application. But keep in maind the primary app is the main app from which we can call other application
 <br>
 The primary app will take the name the of the project folder. for example in our case it will be "DUAtt"
 
@@ -53,8 +53,18 @@ The primary app will take the name the of the project folder. for example in our
 ---
 Inside the primary app, which is ‘DUAtt,’ make the following configurations. Open ‘urls.py’ and add the pattern to point to the ‘tutorial’ app. Import ‘include’ and add the path to the ‘urls.py’ file inside ‘addatt’.
 
-> Path(‘’,include(‘addatt.urls’))>
+> Path(‘’,include(‘addatt.urls’))
+
+this code means when the site start go to the application named "addatt and open urls file and check for lins there. The file urls.py, not yet created and you have to create it manually.
+
+
+<br>
+Notice: you may need to add "include" library <br>
+
+---
+
  
+ ![](images/img1.png)
 <br>
 
 ### Homepage for addatt app
