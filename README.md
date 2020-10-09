@@ -18,7 +18,7 @@ create a new virtual environment in the folder with, then activate it
 
 <br>
 
-> source env/bin/activate 
+> source caasEnv/bin/activate 
 
 ### Install Django inside the project folder
 >pip install django
