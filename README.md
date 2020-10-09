@@ -14,8 +14,11 @@ Du_CAAS_Upload_Attendence
 ### Virtual Environment for the project
 ---
 create a new virtual environment in the folder with, then activate it
->python3 -m evn caasEnv
->source env/bin/activate 
+> python3 -m evn caasEnv
+
+<br>
+
+> source env/bin/activate 
 
 ### Install Django inside the project folder
 >pip install django
