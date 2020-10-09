@@ -36,11 +36,13 @@ That is why we can use pip install django no need for pip3
 
 ### Django New project and new Application
 ---
-Create a new Djanog project, and then create a new Application we are goint to calle it "addatt" short for add attendence
-> django-admin DUAtt
+Create a new Django project "DUAtt", after that create a new Application. We are going to calle it "addatt" short for add attendence
+> django-admin startproject DUAtt
 <br>
 
-> python manage.py startup addatt
+create the appliaiton, you have to enter into the folder DUAtt, which newlly created, then from inside that folder you have to issue the following command:
+
+> python manage.py startapp addatt
 
 This will add a primary app, but we must create other applicaitons, the django project is a list of connected applicaitons. But keep in maind the primary app is the main app from which we can call other applicaitons.
 <br>
@@ -49,7 +51,7 @@ The primary app will take the name the of the project folder. for example in our
 
 ### Creating a URL and a View for the Web Application
 ---
-Inside the primary app, which is ‘DUAtt,’ make the following configurations. Open ‘urls.py’ and add the pattern to point to the ‘tutorial’ app. Import ‘include’ and add the path to the ‘urls.py’ file inside ‘addatt’
+Inside the primary app, which is ‘DUAtt,’ make the following configurations. Open ‘urls.py’ and add the pattern to point to the ‘tutorial’ app. Import ‘include’ and add the path to the ‘urls.py’ file inside ‘addatt’.
 
 > Path(‘’,include(‘addatt.urls’))>
  
