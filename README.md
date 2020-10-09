@@ -21,6 +21,11 @@ create a new virtual environment in the folder with, then activate it
 > source caasEnv/bin/activate 
 
 ### Install Django inside the project folder
+--- 
+Notice:Note that when the virtualenv is activated, python and pip are added to PATH from the virtualenv, so you don't need to worry about using python3 or pip3. And all your packages will be installed under ./venv, well isolated from everything else in your system.
+<br>
+That is why we can use pip install django no need for pip3
+
 >pip install django
 
 <br>
