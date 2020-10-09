@@ -29,6 +29,8 @@ create a new virtual environment in the folder with, then activate it
 ---
 Create a new Djanog project, and then create a new Application we are goint to calle it "addatt" short for add attendence
 > django-admin DUAtt
+<br>
+
 > python manage.py startup addatt
 
 This will add a primary app, but we must create other applicaitons, the django project is a list of connected applicaitons. But keep in maind the primary app is the main app from which we can call other applicaitons.
