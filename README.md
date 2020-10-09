@@ -64,7 +64,7 @@ Notice: you may need to add "include" library <br>
 ---
 
  
- ![](images/img1.png)
+ ![](images/img01.png)
 <br>
 
 ### Homepage for addatt app
@@ -74,6 +74,10 @@ Go to ‘addatt.urls.py’ and import ‘views’ Add the app name for future re
 >Path(‘’,views.homepage, name=“homepage”)
 
 <br>
+See the image bellow a new file urls.py created and inside it the above code added
+--- 
+![](images/img2.png)
+<br>
 
 ### Homepage View for
 --- 
@@ -82,6 +86,11 @@ But so far we don’t have any view called homepage. So, add a simple HttpRespon
 > &emsp;return HttpResponse("First App")
 
 <br>
+here we imported "from django.http import HttpResponse" library
+
+---
+![](images/img3.png)
+
 
 ### Start your App
 --- 
