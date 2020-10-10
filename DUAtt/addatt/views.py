@@ -16,3 +16,15 @@ def upload(request):
         uploaded_file_url = fs.url(filename)
         return render(request, 'upload.html', {'uploaded_file_url': uploaded_file_url})
     return render(request, 'upload.html')
+
+def upload2(request):
+    if request.method == 'POST':
+        form = DocumentForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    else:
+        form = DocumentForm()
+    return render(request, 'upload2.html', {
+        'form': form
+    })

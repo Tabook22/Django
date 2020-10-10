@@ -1,5 +1,21 @@
+# Setting Up a Django Project
+
+<div style="background-color:#f1f1f1;padding:0 0 0 10px;color:#333;font-weigh:bold;">
+
+## Part one
+
+</div>
+Here we are going to do three important steps:<br>
+1. Create a project folder in your<br>
+2. Create a virtual environment for our project <br>
+3. Install Django
+   
+<br>
+<br>
+<br>
+
 ### Project Folder
----
+
 First We have to create a new folder, in our example i created the following folder.<br>
 Du_CAAS_Upload_Attendence
 
@@ -42,6 +58,25 @@ you can also use this code , to install any package
 
 you can verify django installation by:
 >django-admin --version 
+<br>
+<br>
+---- 
+<br>
+
+<div style="background-color:#f1f1f1;padding:0 0 0 10px;color:#333;font-weigh:bold;">
+
+## Part Two
+
+</div>
+
+Here we are going to do two important steps:<br>
+1. Creating the primary application database "DUAtt"
+2. Creating a new application "addatt".
+3. Adding the new created project to settings.py
+4. creating the addatt urls.py and configuring the URLs to the application
+5. Creating the view functions inside the addatt
+
+<br>
 
 ### Django New project and new Application
 ---
@@ -121,8 +156,17 @@ Now, boot up the web server and run the following command
 > python manage.py runserver
 
 ---
+<div style="background-color:#f1f1f1;padding:0 0 0 10px;color:#333;font-weigh:bold;">
 
-### Templates
+## Part Three
+
+</div>
+
+Here we are going to create the templates in our projects<br>
+1. create a new folder and call it template folder.
+2. configure settings.py files for template folder.
+3. Create a view that renders the request and maps to a template inside the template directory.
+4. Configuring the STATIC file section in the settings.py file
 
 ---
 Inside your project folder create a new folder and call it template.<br>
@@ -179,7 +223,7 @@ This view or view function is created inside the ‘addatt’ application, in th
 <br>
 <br>
 
-# Static files 
+Static files
 
 Open the settings.py file and add the following code to the end of the file:<br>
 
@@ -198,10 +242,19 @@ Open the settings.py file and add the following code to the end of the file:<br>
 <br>
 <br>
 
-# File Upload
+<div style="background-color:#f1f1f1;padding:0 0 0 10px;color:#333;font-weigh:bold;">
 
+## Part Four
 
+</div>
 
+Here in this section we are going to make the following changes to our project:<br>
+1. Configure the urls.py file in the primary application to display static files.
+2. Create the upload.html.
+3. Create a new view function inside the views.py to display the upload.html.
+4. Configure the urls.py file to display the upload.html.
+<br>
+<br>
 ### The Basics of File Upload With Django
 
 When files are submitted to the server, the file data ends up placed in **request.FILES.** <br>
@@ -308,7 +361,7 @@ Inside the models.py file, add the following codes:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;`    uploaded_at = models.DateTimeField(auto_now_add=True)`<br>
 
 <br>
-
+here we are going to create a forms.py file, and all the code bellow to it.
 **forms.py**<br>
 `from django import forms`<br>
 `from uploads.core.models import Document`<br>
@@ -339,9 +392,54 @@ Inside the models.py file, add the following codes:<br>
 <br>
 
 
+<div style="background-color:#f1f1f1;padding:0 0 0 10px;color:#333;font-weigh:bold;">
+
+## Part Five
+
+</div>
+
+### Migration
+
+Django is designed to work with a relational database, stored in a relational database management system like PostgreSQL, MySQL, or SQLite.<br>
+All database systems supported by Django use the language SQL to create, read, update and delete data in a relational database.
+
+<br>
+Working directly with SQL can be quite cumbersome, so to make your life easier, Django comes with an object-relational mapper, or ORM for short. The ORM maps the relational database to the world of object oriented programming. Instead of defining database tables in SQL, you write Django models in Python. Your models define database fields, which correspond to the columns in their database tables.
+
+<br>
+Here’s an example of how a Django model class is mapped to a database table:
+<br>
+
+![](images/sql1.png)
+
+---
+_source:https://realpython.com/django-migrations-a-primer/_
+<br>
+---
+defining a model class in a Python file will not make a database. We have to make migration in order to creating the database tables. Additionally, whenever you make a change to your models, like adding a field, the database has to be changed too. Migrations handle that as well.
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # References to
---- 
+
 * https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html
 * https://docs.djangoproject.com/en/3.1/topics/http/file-uploads/
 * https://intellipaat.com/blog/tutorial/python-django-tutorial/django-template-models-registration/
+* https://realpython.com/django-migrations-a-primer/
