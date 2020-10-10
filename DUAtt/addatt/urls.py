@@ -1,6 +1,8 @@
 from django.urls import path, include
-from . import views
+from . views import homepage, upload
+
+app_name='addatt'
 urlpatterns = [
-    path('',views.homepage, name="homepage")
-    
+    path('',homepage, name="homepage"),
+    path('upload/',upload, name="upload"),   
 ]
