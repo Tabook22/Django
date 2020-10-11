@@ -27,6 +27,10 @@ We will assume that the code is in GitHub, all we have to do is to just clone it
 
 > git clone https://github.com/Tabook22/Django.git
 
+<br>
+
+![](images/git01.png)
+
 <div style="height:100px;">
 
 
@@ -52,7 +56,7 @@ Now we need to install Django<br>
 
 `pip install django`
 <br>
-![](images/bash02.png)
+![](images/bash03.png)
 <br>
 
 to check to see if django is installed type the following;<br>
@@ -117,23 +121,36 @@ Once that's done, enter the name of your virtualenv in the Virtualenv section on
 <br>
 <br>
 ![](images/newapp6.png)
+add the virtual environment, you created in our example the virtual environment is "myvenv"
 <br>
 <br>
+![](images/newapp07.png)
 <br>
 <br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
+If every thing works fine you can click on Reload button and
 <br>
 
+![](images/newapp08.png)
+<br>
+<br>
+If there is no error you will see the following webpage
+<br>
+![](images/newapp09.png)
+<br>
 
+--- 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Creating a new Django project on PythonAnywhere
 
-
+Here we are going to create a Django project from secrach, not deploying it like what we did in the previous section above.
 
 ## Configure Virtual Environment
 The first thing we need to do is to configure a new virtual environment<br>
@@ -141,6 +158,9 @@ open a new bash console<br>
 type the following:<br>
 `mkvirtualenv myvenv --python=/usr/bin/python3.7`
 <br>
+
+<br>
+
 
 
 When you close your pythonanywhere applicaiton and want to open and activate your virtual environment, type:<br>
